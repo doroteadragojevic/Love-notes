@@ -5,16 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Love notes</title>
   <link rel="stylesheet" href="styles.css">
+  
+  <!-- Firebase SDK -->
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore.js"></script>
+
 </head>
 <body>
   <div class="container">
     <h1>Porukica za tebe</h1>
     <div id="notes"></div>
-    
-    <textarea id="noteInput" placeholder="Ostavi poruku..."></textarea>
-    <button id="submitNote">Pošaljite poruku</button>
+    <input type="text" id="noteInput" placeholder="Ostavi poruku..." />
+    <button id="sendMessage">Pošaljite poruku</button>
   </div>
 
-  <script src="script.js"></script>
+  <!-- Skripta sa type="module" -->
+  <script type="module" src="script.js"></script>
 </body>
 </html>
