@@ -1,2 +1,3 @@
 # Ignore .env files to keep them safe
 .env
+node_modules/
